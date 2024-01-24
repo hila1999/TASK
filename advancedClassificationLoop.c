@@ -29,7 +29,7 @@ int power(int number ,int power){
     }
     return ans;
  }
-}
+
 int order(int x)
 {
     int n = 0;
