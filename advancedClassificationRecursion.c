@@ -26,13 +26,13 @@ int isPalindrome(int number)
     // Not palindrome
     return 0;
 }
-int power(int n ,int s){
-
-    int ans=n;
-    while(s>1){
+int power1(int n ,int s){
+    int ans=1;
+    while(s>0){
     ans=ans*n;
     s--;
     }
+    return ans;
 }
 int order(int x)
 {
@@ -46,7 +46,7 @@ int order(int x)
 int check_ArmstrongNumber(int num,int size)
 {
     if(num>0)
-    return (power((num%10),size) + check_ArmstrongNumber(num/10,size));
+    return (power1((num%10),size) + check_ArmstrongNumber(num/10,size));
     return 0;
 }
 int isArmstrong (int x){
