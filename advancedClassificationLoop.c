@@ -15,25 +15,26 @@ int   isPalindrome(int n){
     }
     else return 0;
 }
+
 int power(int n ,int s){
 
-    int ans=n;
-    while(s>1){
+    int ans=1;
+    while(s>0){
     ans=ans*n;
     s--;
     }
+    return ans;
 }
 int order(int x)
 {
     int n = 0;
     while (x) {
-        n++;
         x = x / 10;
+        n++;
     }
     return n;
 }
 int isArmstrong (int x){
-    
 int n=order(x);
   int temp = x, sum = 0;
     while (temp) {
