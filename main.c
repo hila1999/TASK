@@ -5,7 +5,6 @@
 
 int main (){
 int low,high,prime,strong,armstrong,palindrome;
-  printf("Enter two numbers(intervals): ");
    scanf("%d %d", &low, &high);
    
     int i=0;
@@ -24,7 +23,7 @@ int low,high,prime,strong,armstrong,palindrome;
     i=0;
 
 
-    printf("The Palindromes are: ");
+    printf("The Palindromes are:");
     while (low <= high) {
     palindrome=isPalindrome(low);  
     if(palindrome==1)
