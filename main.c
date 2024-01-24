@@ -12,7 +12,7 @@ int low,high,prime,strong,armstrong,palindrome;
     while (low <= high) {
     armstrong=isArmstrong(low);  
     if(armstrong==1)
-    {printf("%d ",low);}
+    {printf(" %d",low);}
     low++;
     i++;
    }
@@ -27,7 +27,7 @@ int low,high,prime,strong,armstrong,palindrome;
     while (low <= high) {
     palindrome=isPalindrome(low);  
     if(palindrome==1)
-    {printf("%d ",low);}
+    {printf(" %d",low);}
     low++;
     i++;
    }
@@ -38,7 +38,7 @@ int low,high,prime,strong,armstrong,palindrome;
    while (low <= high) {
     prime=isPrime(low);
     if(prime==1)
-    {printf("%d ",low);}
+    {printf(" %d",low);}
     
     low++;
     i++;
@@ -52,7 +52,7 @@ int low,high,prime,strong,armstrong,palindrome;
     while (low <= high) {
     strong=isStrong(low);  
     if(strong==1)
-    {printf("%d ",low);}
+    {printf(" %d",low);}
     low++;
     i++;
    }
