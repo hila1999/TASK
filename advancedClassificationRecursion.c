@@ -26,18 +26,6 @@ int isPalindrome(int number)
     // Not palindrome
     return 0;
 }
-int isArmstrong (int x){
-if(x == check_ArmstrongNumber(x))
-return 1;
-else
-return 0;
-}
-int check_ArmstrongNumber(int num)
-{
-    if(num>0)
-    return (power((num%10),3) + check_ArmstrongNumber(num/10));
-   else return 0;
-}
 int power(int n ,int s){
 
     int ans=n;
@@ -46,3 +34,27 @@ int power(int n ,int s){
     s--;
     }
 }
+int order(int x)
+{
+    int n = 0;
+    while (x) {
+        x = x / 10;
+        n++;
+    }
+    return n;
+}
+int check_ArmstrongNumber(int num,int size)
+{
+    if(num>0)
+    return (power((num%10),size) + check_ArmstrongNumber(num/10,size));
+    return 0;
+}
+int isArmstrong (int x){
+    int size=order(x);
+if(x == check_ArmstrongNumber(x,size))
+return 1;
+else
+return 0;
+}
+
+
