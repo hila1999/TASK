@@ -8,5 +8,5 @@ int isStrong(int);
 int fact(int n) ;
 int reverseNumber(int number, int rev_num);
 int power(int n ,int s);
-int check_ArmstrongNumber(int num);    
+int check_ArmstrongNumber(int num,int size);    
   #endif
