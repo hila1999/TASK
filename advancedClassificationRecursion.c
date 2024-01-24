@@ -26,14 +26,21 @@ int isPalindrome(int number)
     // Not palindrome
     return 0;
 }
-int power1(int n ,int s){
+
+int power1(int number ,int power){
+
     int ans=1;
-    while(s>0){
-    ans=ans*n;
-    s--;
+    if (power < 0) {
+       ans = 1 / number;
+        power = -power;
+    }
+    for (int i = 0; i <power; i++)
+    {
+    ans*=number;
     }
     return ans;
-}
+ }
+
 int order(int x)
 {
     int n = 0;
