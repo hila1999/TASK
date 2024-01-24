@@ -57,7 +57,7 @@ int low,high,prime,strong,armstrong,palindrome;
     i++;
    }
  
-      printf("\n");
+    printf("\n");
 
  
 
